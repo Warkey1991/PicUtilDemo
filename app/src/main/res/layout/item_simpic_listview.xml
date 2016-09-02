@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="6dp"
+    android:background="#FFFFFFFF"
+    android:orientation="vertical">
+
+    <com.cxkr.picutildemo.simpic.MyGridView
+        android:id="@+id/item_gv_pic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:horizontalSpacing="4dp"
+        android:numColumns="3"
+        android:verticalSpacing="4dp" />
+</LinearLayout>

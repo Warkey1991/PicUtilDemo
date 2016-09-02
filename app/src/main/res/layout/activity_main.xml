@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/id_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        android:visibility="visible"
+        app:navigationIcon="@drawable/cl_backicon"
+        app:titleTextAppearance="@style/toolbar_titleText_normal_style"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    <com.tonicartos.widget.stickygridheaders.StickyGridHeadersGridView
+        android:id="@+id/asset_grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:numColumns="4"
+        android:visibility="gone"
+        android:horizontalSpacing="3dip"
+        android:verticalSpacing="3dip" />
+    <include layout="@layout/layout_photo_manage"/>
+</LinearLayout>

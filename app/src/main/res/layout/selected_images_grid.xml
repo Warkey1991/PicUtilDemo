@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+    <RelativeLayout 
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#ff78ccf2">
+        <TextView 
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:text="@android:string/cancel"/>
+        <TextView 
+            android:id="@+id/sure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:text="@android:string/yes"/>
+    </RelativeLayout>
+    <GridView
+        android:id="@+id/selected_images_gridv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:horizontalSpacing="8dp"
+        android:verticalSpacing="20dp"
+        android:numColumns="3" 
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        ></GridView>
+
+</RelativeLayout>

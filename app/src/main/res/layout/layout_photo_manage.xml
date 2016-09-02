@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/rl_simpic"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#FFD7CDB7"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_header_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:gravity="center_vertical"
+                android:text="相似照片"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/tv_header_size"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="32dp"
+                android:gravity="center_vertical"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/cl_right" />
+        </RelativeLayout>
+
+        <GridView
+            android:id="@+id/gv_sim_pic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:horizontalSpacing="4dp"
+            android:numColumns="4" />
+
+        <RelativeLayout
+            android:id="@+id/rl_blurry"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#FFD7CDB7"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:gravity="center_vertical"
+                android:text="模糊照片"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_blurry_size"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="32dp"
+                android:gravity="center_vertical"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/cl_right" />
+        </RelativeLayout>
+
+        <GridView
+            android:id="@+id/gv_blurry_pic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:horizontalSpacing="4dp"
+            android:numColumns="4" />
+
+        <RelativeLayout
+            android:id="@+id/rl_album"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#FFD7CDB7"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:gravity="center_vertical"
+                android:text="全部相册"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_all_size"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="32dp"
+                android:gravity="center_vertical"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/cl_right" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#FF000000"/>
+        <RelativeLayout
+            android:id="@+id/rl_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#FFD7CDB7"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:gravity="center_vertical"
+                android:text="照片回收站"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_recycler_size"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="32dp"
+                android:gravity="center_vertical"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/cl_right" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
